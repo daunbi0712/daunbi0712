@@ -1,0 +1,52 @@
+/* css초기화(css Reset) 
+가장 대표적인 reset.css
+1) Eric Meyer's CSS Reset
+2) Nicolas Gallagher's Normalize.css
+3) Elad Shechter's The New CSS Reset
+*/
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* 페이지 가로 세로 가운데 정렬 */
+html,body {
+    width: 100%;
+    height: 100%;
+} 
+
+body{
+    display: flex;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: darkgray;
+    color: white;
+}
+
+.wrapper{
+    margin: auto;
+}
+
+/* Styling background image*/
+.bgImage{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 1s linear;
+}
+/* 10xp, 1em, 2rem, 45deg, 4s... */
+
+/* fadeIn animation */
+/* @keyframes 애니메이션 이름{
+    0% { 효과(속성); }
+    100% { 효과(속성); }
+}
+    */
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* Styling clock */
+.app-clock h1 { 
+    font-size: 8em;
+}
