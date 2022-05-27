@@ -17,7 +17,11 @@
                 <h1>09:00</h1>
             </div>
             <div class="app-greeting">
-                <!--인사-->
+                <form class="app-name">
+                    <input type="text" aria-label="name" placeholder="이름을 입력하세요">
+<!-- aria(Accessible Rich Internet Applications): 웹 접근성 향상을 위한 속성 집합 (시각 장애인을 위한)-->
+                </form>
+                <h4 class="app-greeting display_off"></h4>
             </div>
             <div class="app-todoList">
                 <!--오늘 할 중요한 일들-->
@@ -27,6 +31,8 @@
             <!--왼쪽 하단 이미지 설명, 가운데 하단 오늘의 명언, 오른쪽 하단 todo-->
         </div>
     </div>
+    <script src="./scripts/app-greeting.js"></script>
+    <script src="./scripts/app-test.js"></script>
     <script src="./scripts/app-background.js"></script>
     <script src="./scripts/app-clock.js"></script>
 </body>

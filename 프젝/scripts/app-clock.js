@@ -9,14 +9,14 @@ function getTime() {
     let date = new Date();
     let hour = date.getHours();
     let minute = date.getMinutes();
-    let second = date.getSeconds();
+    // let second = date.getSeconds();
     
 
     hour = appendzero(hour);
     minute = appendzero(minute);
-    second = appendzero(second);
+    // second = appendzero(second);
 
-    clockTitle.innerText = `${hour}:${minute}:${second}`
+    clockTitle.innerText = `${hour}:${minute}`
 }
 
 // 계속 시간을 업데이트

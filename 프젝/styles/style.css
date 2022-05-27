@@ -50,3 +50,26 @@ body{
 .app-clock h1 { 
     font-size: 8em;
 }
+
+/* name */
+.app-name input{
+    border: none;
+    width: 300px;
+    font-size: 1.5em;
+    background: inherit; 
+    border-bottom: 2px solid white;
+}
+
+/* ::placeholder -> <input>태그와 <textarea> 태그에 사용하는 가상요소(pseudo element) */
+/* pseudo class -> :nth-child() 등등  */
+/* pseudo element -> ::after, ::first-letter 등등 */
+
+::placeholder{
+    color: #fff;
+    text-align: center;
+}
+
+/* greeting */
+.display_off{display: none;}
+.display_on{display: block;}
+.app.grreting{font-size: 3em;}
