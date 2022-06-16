@@ -1,0 +1,41 @@
+package eui;
+import java.util.Scanner;
+
+public class test004 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner inp = new Scanner(System.in);
+		int p[][] = new int[4][5];
+		
+		for(int i=0;i<p.length-1;i++) {
+			System.out.printf("%d번째 학생의 점수 ",i+1);
+			for(int j=0;j<p[i].length-1;j++) {
+				p[i][j] = inp.nextInt();
+				p[i][4] += p[i][j];
+			}
+		}
+		
+		for(int i=0;i<p[0].length;i++) {
+			for(int j=0;j<p.length-1;j++) {
+				p[3][i] += p[j][i];
+			}
+		}
+		
+		System.out.println(" \t국어\t영어\t수학\t과학\t총점");
+		for(int i=0;i<p.length;i++) {
+			if(i<p.length-1) {
+				System.out.printf("%d번\t",i+1);
+			}
+			else {
+				System.out.print("합계\t");
+				
+			}
+			for(int j=0;j<p[i].length;j++) {
+				System.out.print(p[i][j] + " \t");
+			}
+			System.out.println();
+		}
+	}
+
+}
